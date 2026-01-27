@@ -2,9 +2,11 @@ export class Navigation {
     private progressBar: HTMLElement | null;
     private maxScroll: number;
 
+    private ticking: boolean = false;
+
     constructor() {
         this.progressBar = document.getElementById('progress-indicator');
-        this.maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        this.maxScroll = 0; // Initialized in resize
 
         this.init();
     }
@@ -12,28 +14,37 @@ export class Navigation {
     private init() {
         if (!this.progressBar) return;
 
-        window.addEventListener('scroll', this.handleScroll.bind(this));
-        window.addEventListener('resize', this.handleResize.bind(this));
+        // Initial calculation
+        this.updateDimensions();
 
-        // Listen to section changes if we want snap-based progress, 
-        // but smooth scroll percentage is better for "Scrollytelling" feel.
+        window.addEventListener('scroll', this.onScroll.bind(this), { passive: true });
+        window.addEventListener('resize', this.onResize.bind(this), { passive: true });
     }
 
-    private handleScroll() {
-        if (!this.progressBar) return;
+    private updateDimensions() {
+        this.maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    }
+
+    private onScroll() {
+        if (!this.ticking) {
+            window.requestAnimationFrame(() => {
+                this.updateProgress();
+                this.ticking = false;
+            });
+            this.ticking = true;
+        }
+    }
+
+    private updateProgress() {
+        if (!this.progressBar || this.maxScroll <= 0) return;
 
         const currentScroll = window.scrollY;
-        // Recalculate maxScroll as content might load dynamic
-        this.maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-
-        if (this.maxScroll <= 0) return;
-
         const scrolledPercentage = (currentScroll / this.maxScroll) * 100;
         this.progressBar.style.height = `${Math.min(scrolledPercentage, 100)}%`;
     }
 
-    private handleResize() {
-        this.maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-        this.handleScroll();
+    private onResize() {
+        this.updateDimensions();
+        this.onScroll();
     }
 }
