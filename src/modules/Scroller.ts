@@ -48,14 +48,14 @@ export class Scroller {
                     if (countTo) {
                         const finalValue = parseInt(countTo);
                         const suffix = target.getAttribute('data-suffix') || '';
-                        Animations.animateCountUp(target, finalValue, 2000, suffix);
+                        Animations.animateCountUp(target, finalValue, 3000, suffix);
                         statsObserver.unobserve(target);
                     }
 
                     // Handle Tech Shuffle
                     if (target.id === 'tech-shuffle') {
                         const languages = ['TypeScript', 'Python', 'Go', 'Rust', 'PHP', 'Java', 'Swift', 'Kotlin', 'SQL', 'Dart'];
-                        Animations.shuffleText(target, 'C#', languages, 2000, () => {
+                        Animations.shuffleText(target, 'C#', languages, 3500, () => {
                             // Show the AI note
                             const note = target.parentElement?.querySelector('.ai-note');
                             if (note) {
