@@ -2,11 +2,13 @@ import './styles/main.scss';
 import { Scroller } from './modules/Scroller';
 import { Navigation } from './modules/Navigation';
 import { Cursor } from './modules/Cursor';
+import { TextSwitcher } from './modules/TextSwitcher';
 
 document.addEventListener('DOMContentLoaded', () => {
     new Scroller();
     new Navigation();
     new Cursor();
+    new TextSwitcher();
 
     // Quick console signature
     console.log(

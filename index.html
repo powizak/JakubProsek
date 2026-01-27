@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <!-- Human Mode Toggle -->
+    <button id="human-mode-toggle" class="human-mode-btn">🙂 Lidštinu zapnout</button>
+
     <!-- Persistent Sidebar Navigation -->
     <nav id="sidebar-nav" class="sidebar-nav">
         <div class="progress-bar">
@@ -40,7 +43,9 @@
                     <div class="glow-effect"></div>
                 </div>
                 <h1 class="fade-in-up">Jakub Prošek</h1>
-                <h2 class="fade-in-up delay-1">Software Architect & <span class="text-gradient">AI Integrator</span>
+                <h2 class="fade-in-up delay-1"
+                    data-human="Tvůrce chytrých systémů & <span class='text-gradient'>Webů</span>">Software Architect &
+                    <span class="text-gradient">AI Integrator</span>
                 </h2>
                 <p class="hero-motto fade-in-up delay-2">"Když nemůžeš, tak přidej."</p>
                 <a href="#portfolio" class="cta-button fade-in-up delay-3">Prozkoumat portfolio <span
@@ -57,13 +62,17 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">0010</span>
-                    <h2 class="section-title">Technologie bez kompromisů</h2>
+                    <h2 class="section-title" data-human="Kvalitní a spolehlivá řešení">Technologie bez kompromisů</h2>
                 </div>
                 <div class="content-grid two-col">
                     <div class="text-block">
-                        <p>Jmenuji se Jakub Prošek. Mým světem je kód, který má smysl a systémy, které šetří čas.
+                        <p
+                            data-human="Jmenuji se Jakub Prošek. Mým světem je kód, který má smysl a systémy, které šetří čas. Pomáhám firmám využívat moderní technologie jednoduše a efektivně.">
+                            Jmenuji se Jakub Prošek. Mým světem je kód, který má smysl a systémy, které šetří čas.
                             Přemosťuji propast mezi korporátním vývojem v C# a dynamickým světem umělé inteligence.</p>
-                        <p>Nevnímám web jako statickou vizitku, ale jako živý organismus, který musí pracovat pro Vás.
+                        <p
+                            data-human="Váš web nebude jen obrázek, ale nástroj, který vám vydělává peníze nebo šetří čas.">
+                            Nevnímám web jako statickou vizitku, ale jako živý organismus, který musí pracovat pro Vás.
                         </p>
                         <p class="highlight-text">Většinou mě najdete hluboko v kódu, při optimalizaci automatizačních
                             procesů nebo jako technickou oporu značky Bez Komprese.</p>
@@ -75,14 +84,14 @@
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" data-count-to="90" data-suffix="%">0</span>
-                            <span class="stat-label">AI Augmented Code</span>
+                            <span class="stat-label" data-human="Rychlejší vývoj díky AI">AI Augmented Code</span>
                         </div>
                         <div class="stat-item">
                             <div class="tech-stack-container">
                                 <span class="stat-number" id="tech-shuffle">C#</span>
                                 <span class="ai-note hidden">dnes díky AI cokoliv</span>
                             </div>
-                            <span class="stat-label">Core Tech</span>
+                            <span class="stat-label" data-human="Hlavní technologie">Core Tech</span>
                         </div>
                     </div>
                 </div>
@@ -100,8 +109,10 @@
                     <!-- Service 1 -->
                     <div class="service-card glass-panel">
                         <div class="card-icon">🏗️</div>
-                        <h3>Enterprise Development</h3>
-                        <p>Robustní základy jsou vše. Specializuji se na vývoj v <strong>C# (Blazor, Razor
+                        <h3 data-human="Vývoj firemních systémů">Enterprise Development</h3>
+                        <p
+                            data-human="Vytvářím spolehlivé programy a weby, které s vaší firmou porostou. Přesně podle vašich potřeb.">
+                            Robustní základy jsou vše. Specializuji se na vývoj v <strong>C# (Blazor, Razor
                                 Pages)</strong> nad <strong>MSSQL</strong> databázemi.</p>
                         <ul>
                             <li>Custom aplikace na míru</li>
@@ -113,8 +124,9 @@
                     <!-- Service 2 -->
                     <div class="service-card glass-panel featured">
                         <div class="card-icon">🤖</div>
-                        <h3>AI & Process Automation</h3>
-                        <p>Implementuji <strong>AI modely (Claude, Gemini...)</strong> přímo do vašich procesů.</p>
+                        <h3 data-human="Automatizace a úspora času">AI & Process Automation</h3>
+                        <p data-human="Zařídím, aby rutinní práci dělaly počítače místo lidí. Ušetříte hodiny času.">
+                            Implementuji <strong>AI modely (Claude, Gemini...)</strong> přímo do vašich procesů.</p>
                         <ul>
                             <li>Vlastní n8n instance</li>
                             <li>Eliminace manuální práce</li>
@@ -125,8 +137,10 @@
                     <!-- Service 3 -->
                     <div class="service-card glass-panel">
                         <div class="card-icon">🌐</div>
-                        <h3>Technologický Ekosystém</h3>
-                        <p>Partner pro komplexní značky. Technická supervize a infrastruktura.</p>
+                        <h3 data-human="Vše kolem techniky">Technologický Ekosystém</h3>
+                        <p
+                            data-human="Postarám se o váš e-shop, web i technické zázemí, abyste vy mohli v klidu podnikat.">
+                            Partner pro komplexní značky. Technická supervize a infrastruktura.</p>
                         <ul>
                             <li>E-commerce (Shoptet)</li>
                             <li>WordPress řešení</li>
@@ -154,7 +168,8 @@
                         </div>
                         <div class="project-desc">
                             <p>Kompletní refaktoring kritického legacy systému. Přepis 8000+ řádků kódu a nakonec zcela
-                                nový, bezpečný web v novém designu vč. custom administrace.
+                                nový, bezpečný web v novém designu vč. custom administrace. <br>
+                                Dlouhodobá IT podpora.
                             </p>
                         </div>
                     </a>
@@ -207,10 +222,10 @@
                     <h2 class="section-title">Let's Build Something Real.</h2>
                 </div>
                 <div class="contact-content">
-                    <a href="mailto:powizak@gmail.com" class="huge-email-link">powizak@gmail.com</a>
+                    <a href="mailto:hello@jakubprosek.cz" class="huge-email-link">hello@jakubprosek.cz</a>
                     <div class="contact-details">
                         <span>Jakub Prošek</span>
-                        <span>Plzeň / Šumava / Online</span>
+                        <span>Šumava / Plzeň / Online</span>
                         <span class="ico">IČ: 88204511</span>
                     </div>
 

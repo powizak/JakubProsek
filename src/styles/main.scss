@@ -637,3 +637,44 @@ a.portfolio-item {
     }
   }
 }
+
+/* Human Mode Toggle Button */
+.human-mode-btn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
+
+  &.active {
+    background: var(--accent-gradient);
+    color: #000;
+    font-weight: 700;
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+}
