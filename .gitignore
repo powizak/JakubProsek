@@ -1,0 +1,14 @@
+# Node
+node_modules
+dist
+.env
+
+# User specific exclusions
+baseInfo.md
+web_presentation_brief_and_copy.md
+profilovka_AI.png
+profilovka_AI.webp
+
+# System
+.DS_Store
+Thumbs.db
