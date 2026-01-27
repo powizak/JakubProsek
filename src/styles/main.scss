@@ -460,16 +460,20 @@ a {
   .contact-details {
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* Fix vertical alignment */
     gap: 2rem;
     margin-bottom: 4rem;
     color: #888;
     flex-wrap: wrap;
-    /* allow wrapping on small screens */
 
     .ico {
       font-family: monospace;
       opacity: 0.6;
       font-size: 0.9em;
+      position: relative;
+      top: 1px;
+      /* Micro adjustment for monospace font baseline */
     }
   }
 
