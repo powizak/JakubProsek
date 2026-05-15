@@ -472,7 +472,7 @@ a {
     align-items: center;
     /* Fix vertical alignment */
     gap: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     color: #aaa;
     flex-wrap: wrap;
 
@@ -484,6 +484,13 @@ a {
       top: 1px;
       /* Micro adjustment for monospace font baseline */
     }
+  }
+
+  .legal-info {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 3rem;
+    opacity: 0.7;
   }
 
   .main-footer {
