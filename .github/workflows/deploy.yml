@@ -1,0 +1,62 @@
+name: Build & Deploy to FTP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'index.html'
+      - 'package.json'
+      - 'vite.config.ts'
+      - 'tsconfig.json'
+      - 'scripts/**'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+        env:
+          # Vite public URL - adjust if needed
+          PUBLIC_URL: /
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 1
+
+      - name: Deploy to FTP
+        uses: SamKirkland/ftp-deploy@4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          remote-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          state: default
+          exclusionRules: |
+            node_modules/**
+            .git/**
+            .github/**
+            *.ts
+            *.scss
+            tsconfig.json
+            vite.config.ts
+            package*.json
+            README.md
