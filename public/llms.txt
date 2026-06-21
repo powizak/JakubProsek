@@ -38,11 +38,12 @@ Díky přístupu "AI Augmented Code" dosahuje extrémní rychlosti a efektivity 
 ## Další reference (více na webu v rozbalovací sekci "Další reference")
 - **STŘELNICE SKLEP (2026):** Web na míru — strelnicesklep.cz
 - **MR. CANDY (2026):** Lightweight web — mrcandy.cz
-- **ICZR TURISTICKÁ SOUTĚŽ (2026):** PWA pro turistickou soutěž Informačního centra Železná Ruda. Systém vrcholů s QR kódy, profil účastníka s teploměrem postupu, anti-cheat jádro, veřejný žebříček Top 10, kompletní administrace s tiskem startovních karet. Backend PHP (OOP) + MariaDB, frontend Vanilla JS, PWA s offline režimem. — tourist.jakubprosek.cz
+- **IC ŽR TURISTICKÁ SOUTĚŽ (2026):** Komplexní mobile-first web pro turistickou soutěž Informačního centra Železná Ruda. Systém vrcholů s QR kódy, profil účastníka s teploměrem postupu, anti-cheat jádro, veřejný žebříček Top 10, kompletní administrace s tiskem startovních karet. Backend PHP (OOP) + MariaDB, frontend Vanilla JS, PWA s offline režimem. — tourist.jakubprosek.cz
 - **BK SERVIS (2025):** Landing page pro autoservis (Bez Komprese Servis). Statický web optimalizovaný na výkon (Brotli/Gzip, WebP, responsive srcset, inline critical CSS). — bezkompreseservis.cz
 - **BK TECHNIKA (2026):** One-page web pro firmu nabízející zemní práce a půjčovnu minibagru v regionu Klatovy. Vanilla HTML/CSS/JS, CookieConsent v3, GA4, optimalizace na místní SEO/GEO. — bezkompresetechnika.cz
 - **MENZI MUCK (podpora):** Průběžná údržba a aktualizace WordPress webu — menzimuck.eu
-- **PRÁCE NA HAKU (podpora):** IT podpora — pracenahaku.cz
+- **PRÁCE NA HAKU (podpora):** WordPress instalace a podpora — pracenahaku.cz
+- **KACIMAREZU (podpora):** Podpora a údržba WordPress webu — kacimarezu.cz
 
 ---
 
