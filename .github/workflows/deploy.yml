@@ -11,6 +11,7 @@ on:
       - 'vite.config.ts'
       - 'tsconfig.json'
       - 'scripts/**'
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
