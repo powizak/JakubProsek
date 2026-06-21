@@ -46,7 +46,17 @@ export class Scroller {
                     // Handle Number Counters
                     const countTo = target.getAttribute('data-count-to');
                     if (countTo) {
-                        const finalValue = parseInt(countTo);
+                        let finalValue = parseInt(countTo);
+
+                        // Dynamic calculation based on start year (e.g. years of experience)
+                        const fromYear = target.getAttribute('data-count-from-year');
+                        if (fromYear) {
+                            const startYear = parseInt(fromYear);
+                            if (!isNaN(startYear)) {
+                                finalValue = new Date().getFullYear() - startYear;
+                            }
+                        }
+
                         const suffix = target.getAttribute('data-suffix') || '';
                         Animations.animateCountUp(target, finalValue, 3000, suffix);
                         statsObserver.unobserve(target);
