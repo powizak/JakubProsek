@@ -42,7 +42,7 @@ jobs:
           retention-days: 1
 
       - name: Deploy to FTP
-        uses: SamKirkland/ftp-deploy@4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
