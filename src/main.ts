@@ -3,12 +3,14 @@ import { Scroller } from './modules/Scroller';
 import { Navigation } from './modules/Navigation';
 import { Cursor } from './modules/Cursor';
 import { TextSwitcher } from './modules/TextSwitcher';
+import { MoreReferences } from './modules/MoreReferences';
 
 document.addEventListener('DOMContentLoaded', () => {
     new Scroller();
     new Navigation();
     new Cursor();
     new TextSwitcher();
+    new MoreReferences();
 
     // Quick console signature
     console.log(

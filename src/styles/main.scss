@@ -447,6 +447,149 @@ a {
   }
 }
 
+/* More References (Collapsible) */
+.more-references {
+  margin-top: 4rem;
+}
+
+.references-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1.25rem 2rem;
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-family: monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s var(--easing);
+
+  &:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background: rgba(0, 255, 157, 0.05);
+  }
+
+  .toggle-icon {
+    display: inline-block;
+    transition: transform 0.4s var(--easing);
+    font-size: 1.1em;
+  }
+}
+
+.more-references.is-expanded .references-toggle {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+
+  .toggle-icon {
+    transform: rotate(180deg);
+  }
+}
+
+/* Collapsible: grid-rows 0fr -> 1fr trick for smooth height animation */
+.references-collapsible {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s var(--easing);
+}
+
+.references-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.more-references.is-expanded .references-collapsible {
+  grid-template-rows: 1fr;
+}
+
+/* Compact references grid */
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.reference-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s var(--easing);
+
+  &:hover {
+    border-color: var(--accent-color);
+    background: rgba(0, 255, 157, 0.05);
+    transform: translateY(-3px);
+
+    h3 {
+      color: var(--accent-color);
+    }
+
+    .link-arrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .ref-year {
+    font-family: monospace;
+    color: #999;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+
+  .ref-badge {
+    color: var(--accent-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .ref-type {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .link-arrow {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: 0.85em;
+    color: var(--accent-color);
+    margin-left: 0.4rem;
+  }
+}
+
+.reference-support {
+  border-style: dashed;
+
+  &:hover {
+    border-color: var(--accent-secondary);
+    background: rgba(0, 184, 255, 0.05);
+  }
+}
+
 /* Contact Section */
 .contact-section {
   text-align: center;
