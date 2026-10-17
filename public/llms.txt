@@ -8,10 +8,10 @@
 - **Lokace:** Šumava, Klatovy, Česká republika (působnost celosvětově / plně online)
 - **Zkušenosti:** 15+ let v IT
 - **IČO:** 88204511
-- **E-mail:** hello@jakubprosek.cz
-- **Web:** https://jakubprosek.cz
-- **LinkedIn:** https://www.linkedin.com/in/jakub-prošek-940814144/
-- **GitHub:** https://github.com/powizak
+- **E-mail:** [hello@jakubprosek.cz](mailto:hello@jakubprosek.cz)
+- **Web:** [jakubprosek.cz](https://jakubprosek.cz)
+- **LinkedIn:** [Jakub Prošek](https://www.linkedin.com/in/jakub-pro%C5%A1ek-940814144/)
+- **GitHub:** [powizak](https://github.com/powizak)
 - **Motto:** "Když nemůžeš, tak přidej."
 
 ## Profesní profil a unikátní hodnota (USP)
@@ -36,14 +36,14 @@ Díky přístupu "AI Augmented Code" dosahuje extrémní rychlosti a efektivity 
 - **MŠ DLAŽOV (2026):** Audit digitální bezpečnosti a tvorba konceptu "bezpečného přístavu".
 
 ## Další reference (více na webu v rozbalovací sekci "Další reference")
-- **STŘELNICE SKLEP (2026):** Web na míru — strelnicesklep.cz
-- **MR. CANDY (2026):** Lightweight web — mrcandy.cz
-- **IC ŽR TURISTICKÁ SOUTĚŽ (2026):** Komplexní mobile-first web pro turistickou soutěž Informačního centra Železná Ruda. Systém vrcholů s QR kódy, profil účastníka s teploměrem postupu, anti-cheat jádro, veřejný žebříček Top 10, kompletní administrace s tiskem startovních karet. Backend PHP (OOP) + MariaDB, frontend Vanilla JS, PWA s offline režimem. — tourist.jakubprosek.cz
-- **BK SERVIS (2025):** Landing page pro autoservis (Bez Komprese Servis). Statický web optimalizovaný na výkon (Brotli/Gzip, WebP, responsive srcset, inline critical CSS). — bezkompreseservis.cz
-- **BK TECHNIKA (2026):** One-page web pro firmu nabízející zemní práce a půjčovnu minibagru v regionu Klatovy. Vanilla HTML/CSS/JS, CookieConsent v3, GA4, optimalizace na místní SEO/GEO. — bezkompresetechnika.cz
-- **MENZI MUCK (podpora):** Průběžná údržba a aktualizace WordPress webu — menzimuck.eu
-- **PRÁCE NA HAKU (podpora):** WordPress instalace a podpora — pracenahaku.cz
-- **KACIMAREZU (podpora):** Podpora a údržba WordPress webu — kacimarezu.cz
+- **STŘELNICE SKLEP (2026):** Web na míru — [strelnicesklep.cz](https://strelnicesklep.cz)
+- **MR. CANDY (2026):** Lightweight web — [mrcandy.cz](https://mrcandy.cz)
+- **IC ŽR TURISTICKÁ SOUTĚŽ (2026):** Komplexní mobile-first web pro turistickou soutěž Informačního centra Železná Ruda. Systém vrcholů s QR kódy, profil účastníka s teploměrem postupu, anti-cheat jádro, veřejný žebříček Top 10, kompletní administrace s tiskem startovních karet. Backend PHP (OOP) + MariaDB, frontend Vanilla JS, PWA s offline režimem. — [tourist.jakubprosek.cz](https://tourist.jakubprosek.cz)
+- **BK SERVIS (2025):** Landing page pro autoservis (Bez Komprese Servis). Statický web optimalizovaný na výkon (Brotli/Gzip, WebP, responsive srcset, inline critical CSS). — [bezkompreseservis.cz](https://bezkompreseservis.cz)
+- **BK TECHNIKA (2026):** One-page web pro firmu nabízející zemní práce a půjčovnu minibagru v regionu Klatovy. Vanilla HTML/CSS/JS, CookieConsent v3, GA4, optimalizace na místní SEO/GEO. — [bezkompresetechnika.cz](https://bezkompresetechnika.cz)
+- **MENZI MUCK (podpora):** Průběžná údržba a aktualizace WordPress webu — [menzimuck.eu](https://menzimuck.eu)
+- **PRÁCE NA HAKU (podpora):** WordPress instalace a podpora — [pracenahaku.cz](https://pracenahaku.cz)
+- **KACIMAREZU (podpora):** Podpora a údržba WordPress webu — [kacimarezu.cz](https://kacimarezu.cz)
 
 ---
 
