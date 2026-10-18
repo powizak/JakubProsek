@@ -103,17 +103,9 @@
       ]
     }
     </script>
-    <!-- Preload critical fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Optimized Font Loading -->
-    <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
-        media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap">
-    </noscript>
+    <!-- Self-hosted fonts (no third-party connections, no layout shift) -->
+    <link rel="preload" href="/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/outfit-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
 
     <title>Jakub Prošek | Software Architect & AI Integrator</title>
 </head>
