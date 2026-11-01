@@ -71,6 +71,10 @@ RewriteEngine On
     ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
+# Presmerovani www na hlavni domenu bez www (jednim skokem i z HTTP)
+RewriteCond %{HTTP_HOST} ^www\.jakubprosek\.cz$ [NC]
+RewriteRule ^(.*)$ https://jakubprosek.cz%{REQUEST_URI} [R=301,L]
+
 # Presmerovani HTTP na HTTPS (s osetrenim pro proxy/WEDOS)
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
