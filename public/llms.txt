@@ -30,6 +30,7 @@ Díky přístupu "AI Augmented Code" dosahuje extrémní rychlosti a efektivity 
 - **Další jazyky:** Python a další dle potřeby specifického use-case (Polyglot)
 
 ## Vybrané reference (Portfolio)
+- **PREFAB FACTORY (08/2026 – současnost):** Komplexní systém pro řízení celé firmy včetně výroby pro výrobce prefabrikovaných koupelnových modulů. K tomu ekosystém podpůrných systémů: Portal pro komunikaci s klienty, Surv pro vytěžování dat z kamerového systému, Prófa jako AI asistent a další. — [prefabfactory.cz](https://www.prefabfactory.cz)
 - **AXTEA (2026):** Kompletní refaktoring kritického legacy systému (přepis 8000+ řádků kódu), nový zabezpečený web s custom administrací pro finanční poradenství.
 - **BEZ KOMPRESE (Ongoing):** Technická správa, e-shop a support digitálních kanálů pro automotive komunitu se 116k+ odběrateli. Partnerství v rámci Bez Komprese Media.
 - **VERTICAL FOREST (2025):** Digitální identita pro B2B projekt v cirkulární ekonomice.
